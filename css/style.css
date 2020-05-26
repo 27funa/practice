@@ -48,6 +48,9 @@ header {
   font-size: 1.6rem;
 }
 
+.buttons .button {
+  margin: 10px;
+}
 .button {
   display: inline-block;
   width: 200px;
@@ -60,4 +63,44 @@ header {
 }
 .button:hover {
   opacity: 0.9;
+}
+.button-showy {
+  background-color: #f1b400;
+}
+
+/* about */
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+/* works */
+.works {
+  background-color: #383634;
+  padding: 80px 0;
 }
