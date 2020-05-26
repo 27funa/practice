@@ -10,14 +10,14 @@ html {
 body {
   background: #151515 url('../images/bg.png') no-repeat fixed left bottom;
   background-size: cover;
-  color: fff;
+  color: #fff;
   text-align: center;
   font-size: 1.4rem;
   font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-header {
-  padding: 170px, 30px, 80px;
+.header {
+  padding: 170px 30px 80px;
 }
 
 .site-title-sub {
@@ -121,10 +121,22 @@ header {
   left: 0;
   width: 100%;
   height: 50%;
-  background: url('../images/tree.jpg') no-repeat;
+  background: no-repeat;
   background-size: 100% 100%;
   opacity: 0.2;
   transform: scaleY(-1);
+}
+.work-box.tree::after {
+  background-image: url('../images/tree.jpg');
+}
+.work-box.building::after {
+  background-image: url('../images/building.jpg');
+}
+.work-box.lake::after {
+  background-image: url('../images/lake.jpg');
+}
+.work-box.sky::after {
+  background-image: url('../images/sky.jpg');
 }
 .work-image {
   display: block;
@@ -136,8 +148,10 @@ header {
   top: 50%;
   top: 50%;
   left: 0;
+  z-index: 1;
   width: 100%;
   height: 50%;
+  overflow-y: auto;
 }
 .work-description-inner {
   display: table;
@@ -159,4 +173,11 @@ header {
 .button-ghost {
   border: 1px solid #fff;
   background-color: rgba(255, 255, 255, 0.15);
+}
+.work-box:nth-child(odd) .work-image {
+  margin: 60% 0 0;
+}
+.work-box:nth-child(odd) .work-description,
+.work-box:nth-child(odd)::after {
+  top: 0;
 }
