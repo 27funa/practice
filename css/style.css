@@ -146,7 +146,6 @@ body {
 .work-description {
   position: absolute;
   top: 50%;
-  top: 50%;
   left: 0;
   z-index: 1;
   width: 100%;
@@ -180,4 +179,21 @@ body {
 .work-box:nth-child(odd) .work-description,
 .work-box:nth-child(odd)::after {
   top: 0;
+}
+
+/* sklls */
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.skiss-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+.skill-box {
+  display: table-cell;
 }
