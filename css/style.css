@@ -197,3 +197,13 @@ body {
 .skill-box {
   display: table-cell;
 }
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  line-height: 142px;
+}
