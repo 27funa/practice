@@ -288,6 +288,36 @@ body {
   .about-text {
     line-height: 1.8rem;
   }
-  
-
+  .work-wrapper,
+  .work-box {
+    display: block;
+  }
+  .work-image {
+    display: none;
+  }
+  .work-description {
+    position: relative;
+  }
+  .work-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+  }
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .skill-box {
+    margin: 40px auto;
+  }
+  .skill-text {
+    margin: 0;
+  }
 }
