@@ -180,6 +180,25 @@ body {
 .work-box:nth-child(odd)::after {
   top: 0;
 }
+.work-box {
+  overflow: hidden;
+}
+.work-box image {
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+.work-box:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.work-box:nth-of-type(odd) img {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+}
+.work-box:nth-of-type(even) img {
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
 
 /* skills */
 .skills {
