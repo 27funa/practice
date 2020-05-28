@@ -258,3 +258,36 @@ body {
   padding: 12px 0;
   font-size: 1.3rem;
 }
+
+@media (max-width: 768px) {
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title {
+    margin: 35px 0 35px;
+    font-size: 5rem;
+  }
+  .header {
+    padding-top: 60px;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  body {
+    font-size: 1.3rem;
+  }
+  .about-text {
+    line-height: 1.8rem;
+  }
+  
+
+}
