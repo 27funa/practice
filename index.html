@@ -3,137 +3,399 @@
 <head>
   <meta charset="UTF8">
   <meta name="viewport" content="width=device-width,initaial-scale=1.0,minimum-scale=1.0">
-  <title>plactice</title>
+  <title>2e Maelle -ドゥジエム マエル-</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <script src="js/vendor/modernizr.custom.min.js"></script>
+  <script src="js/vendor/jquery-1.10.2.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 </head>
 <body>
-  <header class="header">
-    <p class="site-title-sub">Web designer's portfolio</p>
-    <h1 class="site-title">HI, MY NAME IS...</h1>
-    <p class="site-description">Check out some of my works.</p>
-    <div class="buttons">
-      <a class="button" href="#about">LEARN MORE</a>
-      <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/top_04_0137.jpg" alt="top_01"></div>
+      <div class="swiper-slide"><img src="images/top_02_0084.jpg" alt="top_02"></div>
+      <div class="swiper-slide"><img src="images/top_01_0077.jpg" alt="top_03"></div>
+      <div class="swiper-slide"><img src="images/top_03_0136.jpg" alt="top_04"></div>
     </div>
-  </header>
-  <section class="about" id="about">
-    <h2 class="heading">ABOUT ME</h2>
-    <p class="about-text">
-      はじめまして。日本でWebデザイナーをしています。<br>
-      デザインの専門学校を卒業し、制作会社での業務経験を経て、
-      現在はフリーランスとして働いています。
-    </p>
-    <p class="about-text">
-      このサイトは「HYML/Css モダンコーディング」という書籍のサンプル
-      として作られた、架空のWebデザイナーのポートフォリオサイトです。<br>
-      HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。
-    </p>
-  </section>
-  <section class="works">
-    <h2 class="heading">WORKS</h2>
-    <div class="works-wrapper">
-      <div class="work-box tree">
-        <img class="work-image" src="images/tree.jpg" alt="制作事例１">
-          <div class="work-description">
-            <div class="work-description-inner">
-              <p class="work-text">
-                ひとつめの事例が入ります。<br>
-                簡単な説明が入ります<br>
-                使用ツール:xxx, xxx, xxx<br>
-                <a href="#" class="button button-ghost">READ MORE</a>
-              </p>
-            </div>
-          </div>
-      </div>
-      <div class="work-box building">
-        <img class="work-image" src="images/building.jpg" alt="制作事例２">
-        <div class="work-description">
-          <div class="work-description-inner">
-            <p class="work-text">
-              ふたつめの事例が入ります。<br>
-              簡単な説明が入ります<br>
-              使用ツール:xxx, xxx, xxx<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="work-box lake">
-        <img class="work-image" src="images/lake.jpg" alt="制作事例３">
-        <div class="work-description">
-          <div class="work-description-inner">
-            <p class="work-text">
-              みっつめの事例が入ります。<br>
-              簡単な説明が入ります<br>
-              使用ツール:xxx, xxx, xxx<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="work-box sky">
-        <img class="work-image" src="images/sky.jpg" alt="制作事例４">
-        <div class="work-description">
-          <div class="work-description-inner">
-            <p class="work-text">
-              よっつめの事例が入ります。<br>
-              簡単な説明が入ります<br>
-              使用ツール:xxx, xxx, xxx<br>
-              <a href="#" class="button button-ghost
-              ">READ MORE</a>
-            </p>
-          </div>
-        </div>
-      </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  
+  
+  <div class="side-menu">
+    <div class="logo-box">
+      <a class="logo" href="#top">
+        <img src="images/logo.jpg" alt="logo" width="160" height="160">
+      </a>
     </div>
-  </section>
-  <section class="skills">
-    <h2 class="heading">MY SKILLS</h2>
-    <div class="skills-wrapper">
-      <div class="skill-box">
-        <i class="skill-icon far fa-lightbulb"></i>
-        <div class="skill-title">IDEA</div>
-        <p class="skill-text">
-          何かを考えることが好きです。<br>
-          新しいことを思いついては試しています。<br>
-          ディレクションの経験もあります。
-        </p>
+    <div class="nav">
+      <ul>
+        <li><a href="#style">style</a></li>
+        <li><a href="#commitment">commitment</a></li>
+        <li><a href="#menu">menu</a></li>
+        <li><a href="#access">salon</a></li>
+      </ul>
+    </div>
+    <div class="next"><i class="fas fa-angle-right"></i></div>
+    <div class="reservation">
+      <a href="https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000444713" target="_blank">
+        <span><i class="fas fa-laptop"></i></span><br>
+        reservation<br>hot pepper<i class="fas fa-external-link-alt"></i>
+      </a>
+    </div>
+  </div>
+  <section class="style" id="style">
+    <h2 class="heading">style</h2>
+    <div class="style-wrapper">
+      <div class="style-box">
+        <a href="images/popup_0513_Maelle 192.jpg" data-lightbox="abc" data-title="style_01">
+          <img src="images/thumb_0513_Maelle 192.jpg" alt="style_01" width="240">
+          <strong>style 01</strong>
+          <span></span>
+        </a>
       </div>
-      <div class="skill-box">
-        <i class="skill-icon fas fa-paint-brush"></i>
-        <div class="skill-title">DESIGN</div>
-        <p class="skill-text">
-          見た目の綺麗さだけじゃなくて、<br>
-          使いやすさ、情報の伝わりやすさなど、<br>
-          その先まで考えることを意識しています。
-        </p>
+      <div class="style-box">
+        <a href="images/popup_0218_Maelle 0425.jpg" data-lightbox="abc" data-title="style_02">
+          <img src="images/thumb_0218_Maelle 0425.jpg" alt="style_02" width="240">
+          <strong>style 02</strong>
+          <span></span>
+        </a>
       </div>
-      <div class="skill-box">
-        <i class="skill-icon fas fa-code"></i>
-        <div class="skill-title">CODING</div>
-        <p class="skill-text">
-          HTML/CSSのコーディングも行います。<br>
-          正しく美しいマークアップと、<br>
-          今後の変更への強さを意識しています。
-        </p>
+      <div class="style-box">
+        <a href="images/popup_0260.jpg" data-lightbox="abc" data-title="style_03">
+          <img src="images/thumb_0260.jpg" alt="style_03" width="240">
+          <strong>style 03</strong>
+          <span></span>
+        </a>
+      </div>
+      <div class="style-box">
+        <a href="images/popup_0513_Maelle 169.jpg" data-lightbox="abc" data-title="style_04">
+          <img src="images/thumb_0513_Maelle 169.jpg" alt="style_04" width="240">
+          <strong>style 04</strong>
+          <span></span>
+        </a>
+      </div>
+      <div class="style-box">
+        <a href="images/popup_0513_Maelle 536.jpg" data-lightbox="abc" data-title="style_05">
+          <img src="images/thumb_0513_Maelle 536.jpg" alt="style_05" width="240">
+          <strong>style 05</strong>
+          <span></span>
+        </a>
+      </div>
+      <div class="style-box">
+        <a href="images/popup_0823_maelle 359.jpg" data-lightbox="abc" data-title="style_06">
+          <img src="images/thumb_0823_maelle 359.jpg" alt="style_06" width="240">
+          <strong>style 06</strong>
+          <span></span>
+        </a>
       </div>
     </div>
   </section>
-  <section class="contact" id="contact">
-    <h2 class="heading">CONTACT</h2>
-    <form class="contact-form">
-      <input type="text" name="name" placeholder="NAME">
-      <textarea name="message"  placeholder="MESSAGE"></textarea>
-      <input type="submit" value="SEND">
-    </form>
+  <section class="commitment" id="commitment">
+    <h2 class="heading">commitment</h2>
+    <div class="commit-wrapper">
+      <div class="commit-box">
+        <img src="images/B071566629_164-219.jpg" alt="relaxation" width="220">
+        <div class="commit-title">relaxation</div>
+        <p class="commit-text">
+          2e Maelle【ドゥジエム マエル】では鏡越しに他のお客様の目線を気にしなくていいように一席ずつに仕切りを設け、ゆっくりお過ごしいただけるように内装に配慮しています。一席一席の空間を広く設けることによりベビーカーを置いたままでの施術ができ、お子様連れの方に好評です。DVDプレイヤーも完備しております。
+        </p>
+      </div>
+      <div class="commit-box">
+        <img src="images/B071566011_164-219.jpg" alt="beauty" width="220">
+        <div class="commit-title">beauty</div>
+        <p class="commit-text">
+          美しくデザインされたスタイルを持続させるために、カラーやパーマのデザインによるダメージに対応したヘアケアやトリートメントプログラムで美しさの持続力を上げます。髪の素材美の原点である頭皮のケアも充実おり、カラー・パーマ時に専用ヘッドスパでアフターケアをしっかり行うことで頭皮のダメージも防ぎます。
+        </p>
+      </div>
+      <div class="commit-box">
+        <img src="images/B071568815_164-219.jpg" alt="head spa" width="220" >
+        <div class="commit-title">head spa</div>
+        <p class="commit-text">
+          カラーリングの後にMaelle【マエル】がこだわるのは、デリケートになった頭皮・髪の状態を保湿・保護する“カラー専用のヘッドスパ”。カラー材に必ず含まれているアルカリ材を除去することでダメージを最小限に抑え、憧れのクリアで潤サラ髪を叶えます。丁寧なシャンプーとともに極上のひとときをお過ごしください。【当店人気No.1】似合わせカット＋スローカラー＋ヘッドスパ
+      </div>
+    </div>
+  </section>
+  <section class="menu" id="menu">
+    <h2 class="heading">menu</h2>
+    <h3 id="first">ご新規様Web限定special menu</h3>
+    <table cellspacing="0" cellpadding="0" summary="ご新規様限定 SPECIAL PRICE MENU" class="special">
+      <tbody>
+        <tr>
+          <th>カット＋カラー＋トリートメント</th>
+          <td>￥6,800</td>
+        </tr>
+        <tr>
+          <th>カット＋カラー＋ミディアムトリートメント or ミディアムヘッドスパ</th>
+          <td>￥8,400</td>
+        </tr>
+        <tr>
+          <th>カット＋カラー＋オーダーメイドトリートメント or ロングヘッドスパ</th>
+          <td>￥11,340</td>
+        </tr>
+        <tr>
+          <th>カット＋パーマ</th>
+          <td>￥7,300</td>
+        </tr>
+        <tr>
+          <th>カット＋水パーマ</th>
+          <td>￥9,000</td>
+        </tr>
+        <tr>
+          <th>カット＋ミディアムスパ</th>
+          <td>￥6,800</td>
+        </tr>
+        <tr>
+          <th>カット＋縮毛矯正＋トリートメント</th>
+          <td>￥11,300</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>standard menu</h3>
+    <table cellspacing="0" cellpadding="0" summary="通常 MENU" class="standard">
+      <tbody>
+        <tr>
+          <th colspan="3">カット</th>
+          <td>¥4,500</td>
+        </tr>
+        <tr>
+          <th rowspan="4">カラー（トリートメント付き）<br><span class="caption">+¥2,000でカットを追加できます。<br>リタッチのみ +¥3,000</span></th>
+          <td colspan="2">リタッチ&nbsp;&nbsp;<span class="caption">(髪の生え際)</span></td>
+          <td>¥4,500</td>
+        </tr>
+        <tr>
+          <td colspan="2">フル&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="caption">(髪の毛全体)</span></td>
+          <td>¥7,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">ハイライト/ローライト</td>
+          <td>¥1,500</td>
+        </tr>
+        <tr>
+          <td colspan="2">ダブルカラー</td>
+          <td>¥11,000</td>
+        </tr>
+        <tr>
+          <th rowspan="6">パーマ<br><span class="caption">+¥2,000でカットを追加できます。</span></th>
+          <td colspan="2">パーマ</td>
+          <td>¥7,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">ポイントパーマ</td>
+          <td>¥2,000〜</td>
+        </tr>
+        <tr>
+          <td colspan="2">水パーマ<span class="caption">(トリートメント付きパーマです)</span></td>
+          <td>¥9,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">ストレートパーマ落とし</td>
+          <td>¥7,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">縮毛矯正<span class="caption">（トリートメント込み）</span></td>
+          <td>¥12,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">ポイント縮毛矯正<span class="caption">（トリートメント込み）</span></td>
+          <td>¥5,000</td>
+        </tr>
+        <tr>
+          <th rowspan="3">ヘッドスパ<br><span class="caption">トリートメント付き</span></th>
+          <td colspan="2">ショートコース</td>
+          <td>¥3,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">ミディアムコース</td>
+          <td>¥4,500</td>
+        </tr>
+        <tr>
+          <td colspan="2">オーダーメイドコース</td>
+          <td>¥6,000</td>
+        </tr>
+        <tr>
+          <th rowspan="3">トリートメント</th>
+          <td colspan="2">クイックコース</td>
+          <td>¥3,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">ミディアムコース</td>
+          <td>¥4,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">オーダーメイドコース</td>
+          <td>¥5,500</td>
+        </tr>
+        <tr>
+          <th rowspan="15" class="none">セットメニュー</th>
+          <td colspan="2">カット＋カラー</td>
+          <td>¥9,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">カット＋リタッチ</td>
+          <td>¥7,500</td>
+        </tr>
+        <tr>
+          <td rowspan="4">カット＋カラー＋ヘッドスパ</td>
+          <td class="course">クイックコース</td>
+          <td class="price">¥11,000</td>
+        </tr>
+        <tr>
+          <td class="course">ミディアムコース</td>
+          <td class="price">¥12,500</td>
+        </tr>
+        <tr>
+          <td class="course">オーダーメイドコース</td>
+          <td class="price">¥14,000</td>
+        </tr>
+        <tr>
+          <td class="course">プレミアムコース</td>
+          <td>¥16,000</td>
+        </tr>
+        <tr>
+          <td rowspan="3">カット＋カラー＋トリートメント</td>
+          <td class="course">クイックコース</td>
+          <td class="price">¥11,000</td>
+        </tr>
+        <tr>
+          <td class="course">ミディアムコース</td>
+          <td class="price">¥12,500</td>
+        </tr>
+        <tr>
+          <td class="course">オーダーメイドコース</td>
+          <td>¥14,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">カット＋パーマ</td>
+          <td>¥9,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">カット＋水パーマ</td>
+          <td>¥11,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">カット＋縮毛矯正＋トリートメント</td>
+          <td>¥14,000</td>
+        </tr>
+        <tr>
+          <td rowspan="3">カット＋ヘッドスパ</td>
+          <td class="course">クイックコース</td>
+          <td class="price">¥6,500</td>
+        </tr>
+        <tr>
+          <td class="course">ミディアムコース</td>
+          <td class="price">¥8,000</td>
+        </tr>
+        <tr>
+          <td class="course">オーダーメイドコース</td>
+          <td>¥9,500</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="access" id="access">
+    <h2 class="heading">salon</h2>
+    <div class="access-wrapper">
+      <div class="access-box left-section">
+        <img src="images/2e_Maelle.jpg" alt="2e Maelle" width="360">
+        <div class="salon-name">2e Maelle ドゥジエム マエル</div>
+        <table>
+          <tr>
+            <th>住所</th>
+            <td>
+              兵庫県川西市栄根2-5-6 1-5
+              <a id="openMap" target="_blank" href="https://www.google.com/maps/place/%E3%80%92666-0021+%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%B7%9D%E8%A5%BF%E5%B8%82%E6%A0%84%E6%A0%B9%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%96/@34.824539,135.411812,16z/data=!4m5!3m4!1s0x6000f6d5f0a0bb6f:0x694d4312b773d16b!8m2!3d34.8245394!4d135.411812?hl=ja"><i class="fas fa-map-marker-alt"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <th>電話番号</th>
+            <td>
+              072-758-3703
+              <a href="tel:072-758-3703"><i class="fas fa-phone"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <th>営業時間</th>
+            <td>9：00～19:00</td>
+          </tr>
+          <tr>
+            <th>定休日</th>
+            <td>不定休</td>
+          </tr>
+          <tr>
+            <th>予約</th>
+            <td>
+              HOT PEPPER Beuty<a href="https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000444713" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="access-box">
+        <img src="images/Maelle.jpg" alt="2e Maelle" width="360">
+        <div class="salon-name">Maelle マエル</div>
+        <table>
+          <tr>
+            <th>住所</th>
+            <td>
+              兵庫県伊丹市伊丹1丁目13-49 1F
+              <a id="openMap" target="_blank" href="https://www.google.com/maps/place/%E3%83%9E%E3%82%A8%E3%83%AB+Maelle/@34.78283,135.420688,19z/data=!4m5!3m4!1s0x0:0xd4799c8be2d16f7b!8m2!3d34.7828298!4d135.4206879?hl=ja"><i class="fas fa-map-marker-alt"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <th>電話番号</th>
+            <td>
+              072-747-7297
+              <a href="tel:072-747-7297"><i class="fas fa-phone"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <th>営業時間</th>
+            <td>9：00～19:00</td>
+          </tr>
+          <tr>
+            <th>定休日</th>
+            <td>不定休</td>
+          </tr>
+          <tr>
+            <th>予約</th>
+            <td>
+              HOT PEPPER Beuty<a href="https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000370894" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>リンク</th>
+            <td>
+              maelle.jp<a href="http://maelle.jp/" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </section>
   <footer class="footer">
-    ©︎ plactice site
+    ©︎ 2e Maelle
   </footer>
   <script src="lib/placeholders.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 </body>
 </head>
 </html>
