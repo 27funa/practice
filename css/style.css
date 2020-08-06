@@ -65,11 +65,37 @@ body {
   margin: 40px auto 80px;
 }
 
+.rsv_bottom {
+  display: none;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  padding-top: 16px;
+}
+
+.rsv_bottom a {
+  color: #295691;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rsv_bottom i {
+  font-size: 1rem;
+}
+
 .reservation {
   margin: 0 32px;
   border-top: solid 1px #295691;
   border-bottom: solid 1px #295691;
 }
+
 
 .reservation a {
   display: block;
@@ -467,26 +493,7 @@ td {
   }
 
   .reservation {
-    position: fixed;
-    z-index: 3;
-    bottom: 0;
-    background-color: rgb(245, 245, 245);
-    width: 100%;
-    height: 60px;
-    margin: 0;
-    border: none;
-    box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  }
-
-  .reservation a {
-    padding: 0;
-    color: #295691;
-    height: 60px;
-    line-height: 16px;
-  }
-
-  .reservation span, .reservation br:first-child {
-    display: none;
+    display: none
   }
 
   .style-wrapper {
@@ -584,6 +591,10 @@ td {
     padding: 40px 0 ;
     font-size: 1.1rem;
     width: 100%;
+  }
+
+  .rsv_bottom {
+    display: block;
   }
 }
 
